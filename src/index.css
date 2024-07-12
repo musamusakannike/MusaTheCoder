@@ -8,6 +8,10 @@
 }
 
 /* General styles */
+html, body, nav {
+  width: 100vw;
+}
+
 body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
