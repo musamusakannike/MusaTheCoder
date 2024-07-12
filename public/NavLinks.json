@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Home",
+    "destination": "/"
+  },
+  {
+    "title": "Portfolio",
+    "destination": "/portfolio"
+  }
+]

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables */
+:root {
+  --primary-color: #2f5f48;
+  --secondary-color: #f3f2ec;
+  --tertiary-color: #dcd9ff;
+}
+
+/* General styles */
+body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+
+.navbar .nav-link.active {
+  font-weight: bolder;
+}
+
+/* Buttons */
+.button-green {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.button-green:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.button-outline-green {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-outline-green:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Text */
+.text-green {
+  color: var(--primary-color);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%);
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.card-body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(47, 95, 72, 0.25);
+}
+
+/* Alerts */
+.alert-green {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Utility classes */
+.bg-green {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+.bg-secondary-green {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.bg-tertiary-green {
+  background-color: var(--tertiary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.border-green {
+  border-color: var(--primary-color) !important;
+}
+
+.border-top-green {
+  border-top-color: var(--primary-color) !important;
+}
+
+.border-bottom-green {
+  border-bottom-color: var(--primary-color) !important;
+}
+
+.border-left-green {
+  border-left-color: var(--primary-color) !important;
+}
+
+.border-right-green {
+  border-right-color: var(--primary-color) !important;
+}
+
+
+.image-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+.image-container:hover .image {
+  filter: brightness(50%);
+  transform: scale(1.05);
+}
+
+.image-container:hover .title-overlay {
+  display: block;
+}
